@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>FoodShala</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="main.js"></script>
+
+<body>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-padding" id="head">
+    <p style="letter-spacing:15px;"><b>FOODSHALA</b></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="reg_show()" class="w3-button w3-black"><font style="letter-spacing:4px;">Restaurant</font></button></p>
+    <p><button onclick="div_show()" class="w3-button w3-black"><font style="letter-spacing:4px;">Customer</font></button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p><b>Copyright © FoodShala</b></p>
+  </div>
+</div>
+
+<!--Form-->
+<div id="abc">
+<span onclick="document.getElementById('abc').style.display='none'" class="close" title="Close Modal">&times;</span>
+<div id="popupContact">
+<!-- Sign Up Form -->
+<form action="<?php echo $_SERVER['PHP_SELF'];?>" id="signup" method="post" name="form">
+<center>
+<h2><font style="Code Light"><b>SIGN UP</b></font></h2>
+<hr>
+Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="name" name="name" placeholder="Name" type="varchar" required></input><br><br>
+Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="email" name="email" placeholder="Email" type="email" required></input><br><br>
+Number &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="number" name="pnum" placeholder="Mobile Number" type="int" required></input><br><br>
+Username &nbsp&nbsp&nbsp <input id="username" name="uname" placeholder="Username" type="varchar"required></input><br><br>
+Password &nbsp&nbsp&nbsp <input id="password" name="pwd" placeholder="Password" type="password" required></input><br>
+<br><button id="sub" name="sub" class="w3-hover-gray" onclick="check_empty()">Sign Up</button><br>
+<br><b>Already have an account? <a href="javascript:%20log_show()" id="log"><b>Login</b></a>
+<br><a href="home.html" id="log"><font color="blue">Skip--></font></a><br><br>
+</center>
+</form>
+</div>
+</div>
+
+<!--Form-->
+<div id="bcd">
+<span onclick="document.getElementById('bcd').style.display='none'" class="close" title="Close Modal">&times;</span>
+<div id="popupContact1">
+<!-- Login Form -->
+<form action="index1.php" id="login" method="post" name="form">
+<center>
+<h2><font style="Code Light"><b>LOGIN</b></font></h2>
+<hr>
+Username &nbsp&nbsp&nbsp <input id="username" name="uname" placeholder="Username" type="varchar" required></input><br><br>
+Password &nbsp&nbsp&nbsp <input id="password" name="pwd" placeholder="Password" type="password" required></input><br>
+<br><button id="submit" class="w3-hover-gray" onclick="">Login</button>
+<br><a href="home.html" id="log"><font color="blue">Skip--></font></a><br><br>
+<div class="w3-large w3-section">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-envelope w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+</div>
+</center>
+</form>
+</div>
+</div>
+
+<!-- Registration Form-->
+<div id="reg">
+<span onclick="document.getElementById('reg').style.display='none'" class="close" title="Close Modal">&times;</span>
+<div id="popupContact">
+<!-- Sign Up Form -->
+<form action="" id="signup" method="post" name="form">
+<center>
+<h2><font style="Code Light"><b>REGISTER</b></font></h2>
+<hr>
+Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="name" name="name" placeholder="Name" type="varchar" required></input><br><br>
+Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="email" name="email" placeholder="Email" type="email" required></input><br><br>
+Number &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input id="number" name="pnum" placeholder="Mobile Number" type="int" required></input><br><br>
+Username &nbsp&nbsp&nbsp <input id="username" name="uname" placeholder="Username" type="varchar"required></input><br><br>
+Password &nbsp&nbsp&nbsp <input id="password" name="pwd" placeholder="Password" type="password" required></input><br>
+<br><button id="submit" class="w3-hover-gray">Sign Up</button><br>
+<br><b>Already have an account? <a href="javascript:%20regl_show()"><b>Login</b></a>
+</center>
+</form>
+</div>
+</div>
+
+<div id="regl">
+<span onclick="document.getElementById('regl').style.display='none'" class="close" title="Close Modal">&times;</span>
+<div id="popupContact1">
+<!-- Login Form -->
+<form action="home.html" id="login" method="post" name="form">
+<center>
+<h2><font style="Code Light"><b>LOGIN</b></font></h2>
+<hr>
+Username &nbsp&nbsp&nbsp <input id="username" name="uname" placeholder="Username" type="varchar" required></input><br><br>
+Password &nbsp&nbsp&nbsp <input id="password" name="pwd" placeholder="Password" type="password" required></input><br>
+<br><button id="submit" class="w3-hover-gray" onclick="">Login</button><br><br>
+</center>
+</form>
+</div>
+</div>
+
+</body>
+</html>
+
+
